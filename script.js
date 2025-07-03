@@ -58,4 +58,7 @@ document.getElementById("filtroUsuario").addEventListener("input", cargarDatos);
 document.getElementById("filtroEstado").addEventListener("input", cargarDatos);
 document.getElementById("filtroFecha").addEventListener("change", cargarDatos);
 
-window.onload = cargarDatos;
+window.onload = () => {
+  cargarDatos();
+  setInterval(cargarDatos, 30000); // actualizar cada 30 segundos
+};
