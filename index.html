@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel de Registros</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Panel de Registros</h1>
+    <div class="filters">
+      <input type="text" id="filtroUsuario" placeholder="Filtrar por usuario">
+      <input type="text" id="filtroEstado" placeholder="Filtrar por estado">
+      <input type="date" id="filtroFecha" placeholder="Filtrar por fecha">
+      <button onclick="exportarCSV()">Exportar CSV</button>
+    </div>
+    <div class="table-container">
+      <table id="tabla">
+        <thead>
+          <tr>
+            <th>Fecha</th><th>Usuario</th><th>Cliente</th><th>Inicio</th><th>Fin</th>
+            <th>Duración</th><th>Motivo</th><th>Estado</th><th>Comentario</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
