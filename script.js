@@ -1,5 +1,5 @@
 const SUPABASE_URL = 'https://kmhstbymlzamyzxtioad.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttaHN0YnltbHphbXl6eHRpb2FkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEzOTM0MDQsImV4cCI6MjA2Njk2OTQwNH0.T4kJdEnZ93W1BiiGxgHHj9gWj_HjwnspfTy_W1o1nQg';
 
 async function cargarDatos() {
   const res = await fetch(`${SUPABASE_URL}/rest/v1/registros?select=*`, {
