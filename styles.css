@@ -1,3 +1,4 @@
+
 body {
   background-color: #121212;
   color: #fff;
@@ -9,7 +10,7 @@ body {
   max-width: 1000px;
   margin: auto;
 }
-h1 {
+h1, h2 {
   text-align: center;
 }
 .filters {
@@ -43,4 +44,10 @@ th {
 }
 tr:hover {
   background-color: #333;
+}
+.charts canvas {
+  width: 100% !important;
+  max-width: 800px;
+  margin: 20px auto;
+  display: block;
 }

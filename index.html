@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Panel de Registros</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="container">
@@ -19,12 +21,23 @@
       <table id="tabla">
         <thead>
           <tr>
-            <th>Fecha</th><th>Usuario</th><th>Empleado</th><th>Inicio</th><th>Fin</th>
+            <th>Fecha</th><th>Usuario</th><th>Cliente</th><th>Inicio</th><th>Fin</th>
             <th>Duración</th><th>Motivo</th><th>Estado</th><th>Comentario</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
+    </div>
+
+    <div class="charts">
+      <h2>Usuarios más activos</h2>
+      <canvas id="graficaUsuarios"></canvas>
+
+      <h2>Motivos más comunes</h2>
+      <canvas id="graficaMotivos"></canvas>
+
+      <h2>Registros por día</h2>
+      <canvas id="graficaFechas"></canvas>
     </div>
   </div>
   <script src="script.js"></script>
