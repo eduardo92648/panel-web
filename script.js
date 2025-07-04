@@ -29,7 +29,7 @@ function mostrarDatos(registros) {
   filtrados.forEach(r => {
     const fila = document.createElement("tr");
     fila.innerHTML = `
-      <td>${r.fecha}</td><td>${r.encargado}</td><td>${r.cliente}</td>
+      <td>${r.fecha}</td><td>${r.encargado}</td><td>${r.empleado}</td>
       <td>${r.inicio}</td><td>${r.fin}</td><td>${r.duracion}</td>
       <td>${r.motivo}</td><td>${r.estado}</td><td>${r.comentario}</td>
     `;
