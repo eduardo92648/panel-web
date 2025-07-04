@@ -1,6 +1,6 @@
 
 const SUPABASE_URL = 'https://kmhstbymlzamyzxtioad.supabase.co';
-const SUPABASE_KEY = 'TU_SUPABASE_KEY'; // ← Pega tu clave completa aquí
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImttaHN0YnltbHphbXl6eHRpb2FkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEzOTM0MDQsImV4cCI6MjA2Njk2OTQwNH0.T4kJdEnZ93W1BiiGxgHHj9gWj_HjwnspfTy_W1o1nQg'; // ← Pega tu clave completa aquí
 
 let chartUsuarios, chartMotivos, chartFechas;
 
@@ -33,7 +33,7 @@ function mostrarDatos(registros) {
   filtrados.forEach(r => {
     const fila = document.createElement("tr");
     fila.innerHTML = `
-      <td>${r.fecha}</td><td>${r.encargado}</td><td>${r.cliente}</td>
+      <td>${r.fecha}</td><td>${r.encargado}</td><td>${r.empleado}</td>
       <td>${r.inicio}</td><td>${r.fin}</td><td>${r.duracion}</td>
       <td>${r.motivo}</td><td>${r.estado}</td><td>${r.comentario}</td>
     `;
