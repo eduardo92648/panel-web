@@ -1,6 +1,6 @@
 
 const SUPABASE_URL = 'https://kweifefxeootdpoydjqa.supabase.co';
-const SUPABASE_KEY = 'sb_secret__NIh4Tg9_UQ1njbFrt4Fyw_NxxUs7Vc'; // ← Pega tu clave completa aquí
+const SUPABASE_KEY = 'sb_publishable_eDi85NXti-wKlVEQjEbkkw__i0cEUAz'; // ← Pega tu clave completa aquí
 
 let chartUsuarios, chartMotivos, chartFechas;
 
