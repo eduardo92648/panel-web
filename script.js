@@ -25,7 +25,7 @@ function mostrarDatos(registros) {
   cuerpo.innerHTML = "";
 
   const filtrados = registros.filter(r =>
-    (!filtroUsuario || r.encargado?.toLowerCase().includes(filtroUsuario)) &&
+    (!filtroUsuario || r.usuario?.toLowerCase().includes(filtroUsuario)) &&
     (!filtroEstado || r.estado?.toLowerCase().includes(filtroEstado)) &&
     (!filtroFecha || r.fecha === filtroFecha)
   );
@@ -33,7 +33,7 @@ function mostrarDatos(registros) {
   filtrados.forEach(r => {
     const fila = document.createElement("tr");
     fila.innerHTML = `
-      <td>${r.fecha}</td><td>${r.encargado}</td><td>${r.empleado}</td>
+      <td>${r.fecha}</td><td>${r.usuario}</td><td>${r.empleado}</td>
       <td>${r.inicio}</td><td>${r.fin}</td><td>${r.duracion}</td>
       <td>${r.motivo}</td><td>${r.estado}</td><td>${r.comentario}</td>
     `;
@@ -49,7 +49,7 @@ function graficarDatos(registros) {
       return acc;
     }, {});
 
-  const porUsuario = contar(registros, "encargado");
+  const porUsuario = contar(registros, "usuario");
   const porMotivo = contar(registros, "motivo");
   const porFecha = contar(registros, "fecha");
 
